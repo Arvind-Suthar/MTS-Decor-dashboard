@@ -19,7 +19,6 @@
           <img src="img/logo.png" alt="Brand Image" class="img-responsive">
         </div>
       </nav>
-
     </div>
     <div class="col-10">
       <div class="navbar">
@@ -30,9 +29,27 @@
           <div class="user-name">
             Jagdish Suthar  <i class="fas fa-chevron-down"></i>
           </div>
+          <div class="user-dropdown">
+            <ul class="user-dropdown-list">
+              <li class="item-dropdown"><i class="fas fa-cog"></i>Settings</li>
+              <li class="item-dropdown"><i class="far fa-envelope"></i>Mail</li>
+              <li class="item-dropdown logout"><i class="fas fa-power-off"></i>Log Out</li>
+            </ul>
+          </div>
         </div>
+
       </div>
+
     </div>
   </div>
   </body>
+  <script>
+  $(document).ready(function(){
+    $(".user").click(function(){
+      $(".user-name").toggleClass('active');
+      $(".user-dropdown").toggleClass('user-active');
+    });
+  });
+
+  </script>
 </html>
