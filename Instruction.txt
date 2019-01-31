@@ -3,4 +3,5 @@ First Task
   2. li class: nav-item
 Colours
  1.Light grey: #ccc
- 2. blue: ???
+ 2. blue: #0366d6
+ 3. light blue: 
