@@ -1,3 +1,6 @@
 First Task
   1. ul class: side-nav
   2. li class: nav-item
+Colours
+ 1.Light grey: #ccc
+ 2. blue: ???
