@@ -12,6 +12,7 @@ nav{
 nav .navbar-brand{
   float: left;
   margin: 5px 40px;
+
 }
 nav .navbar-brand img{
   height: 44px;
@@ -39,20 +40,18 @@ nav ul.navbar-list li.item:hover{
 }
 
 .col-2,.col-1,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
-  overflow: hidden !important;
   padding: 0px !important;
 }
 .navbar{
   height: 64px;
   background: #fff;
-  overflow: hidden;
   width: 100%;
 }
 .navbar .user{
   height: 100%;
   width: 200px;
   margin-left: 66vw;
-  overflow: hidden;
+  cursor: pointer;
 }
 .navbar .user .user-img{
   float: left;
@@ -65,5 +64,45 @@ nav ul.navbar-list li.item:hover{
 .navbar .user .user-name{
   padding: 10px;
   text-align: center;
-  color: #888;
+  color: #6b6b6b;
+  transition: 0.3s;
+}
+.navbar .user .active{
+  color: #0366d6;
+}
+.user-dropdown{
+  z-index: 1;
+  background: #fff;
+  box-shadow: 0px 4px 10px #999;
+  width: 220px;
+  margin-top: 12px;
+  margin-left: -10px;
+  overflow: hidden;
+  transition: 0.5s;
+  height: 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+.user-dropdown-list{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.user-dropdown-list .item-dropdown{
+  padding: 10px 30px;
+  color: #666;
+  transition: 0.3s;
+  text-align: justify;
+}
+.user-dropdown-list .item-dropdown i {
+  width: 30px;
+}
+.user-dropdown-list .item-dropdown:hover{
+  background-color: #0366d6;
+  color: #fff;
+}
+.user-dropdown-list .logout:hover{
+  background-color: #ff3838;
+}
+.user-active{
+  height: 132px !important;
 }
